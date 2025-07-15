@@ -1,0 +1,42 @@
+/* Estilos base (mobile first) */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f5f0;
+  padding: 0; /* Elimina el padding de 1rem que creaba espacios */
+}
+
+.content-wrapper {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 2rem 1.5rem;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Elimina el max-width de 1200px que limitaba el ancho */
+/* Elimina border-radius para que ocupe todo el ancho */
+/* Mantén el resto de tus estilos igual hasta los media queries */
+
+/* Media Queries para tablets */
+@media (min-width: 768px) {
+  .content-wrapper {
+    padding: 3rem 2rem;
+  }
+  /* ... resto de tus estilos ... */
+}
+
+/* Media Queries para desktop - ELIMINA el max-width de 1400px */
+@media (min-width: 1024px) {
+  .content-wrapper {
+    padding: 4rem;
+  }
+  /* ... resto de tus estilos ... */
+}
